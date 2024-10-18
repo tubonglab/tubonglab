@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dịch Vụ Công Nghệ Thông Tin - TechSolutions</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -104,6 +107,29 @@
             text-align: center;
             padding: 20px;
             margin-top: 20px;
+        }
+        
+        /* Media Queries for Responsive Design */
+        @media(max-width: 768px) {
+            header #branding,
+            header nav,
+            header nav li,
+            #boxes .box,
+            #contact form input, 
+            #contact form textarea {
+                float: none;
+                text-align: center;
+                width: 100%;
+            }
+            header {
+                padding-bottom: 20px;
+            }
+            #showcase h1 {
+                font-size: 40px;
+            }
+            .container {
+                width: 90%;
+            }
         }
     </style>
 </head>
