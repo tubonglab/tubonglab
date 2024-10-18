@@ -1,11 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Giới Thiệu Sản Phẩm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .features {
+            list-style-type: none;
+            padding: 0;
+        }
+        .features li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        .features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #4CAF50;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Tên Sản Phẩm</h1>
+        <p>Đây là một đoạn mô tả ngắn về sản phẩm của bạn. Hãy nêu bật những điểm độc đáo và giá trị mà sản phẩm mang lại cho khách hàng.</p>
+        
+        <h2>Tính Năng Chính</h2>
+        <ul class="features">
+            <li>Tính năng 1</li>
+            <li>Tính năng 2</li>
+            <li>Tính năng 3</li>
+            <li>Tính năng 4</li>
+        </ul>
+        
+        <h2>Tại Sao Chọn Chúng Tôi?</h2>
+        <p>Giải thích ngắn gọn về lý do khách hàng nên chọn sản phẩm của bạn. Đề cập đến chất lượng, giá trị, hoặc bất kỳ ưu điểm nào khác.</p>
+        
+        <a href="#" class="cta-button">Mua Ngay</a>
+    </div>
 </body>
 </html>
