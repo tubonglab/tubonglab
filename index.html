@@ -3,69 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giới Thiệu Sản Phẩm</title>
+    <title>Dịch Vụ Công Nghệ Thông Tin - TechSolutions</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1 {
+            padding: 0;
             color: #333;
         }
-        .features {
-            list-style-type: none;
-            padding: 0;
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
         }
-        .features li {
-            margin-bottom: 10px;
-            padding-left: 20px;
-            position: relative;
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
         }
-        .features li:before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: #4CAF50;
-        }
-        .cta-button {
-            display: inline-block;
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
+        header a {
+            color: #ffffff;
             text-decoration: none;
-            border-radius: 5px;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        .highlight, header .current a {
+            color: #e8491d;
             font-weight: bold;
+        }
+        #showcase {
+            min-height: 400px;
+            background: url('https://source.unsplash.com/random/1600x900/?technology') no-repeat center center/cover;
+            text-align: center;
+            color: #ffffff;
+        }
+        #showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        #showcase p {
+            font-size: 20px;
+        }
+        #boxes {
+            margin-top: 20px;
+        }
+        #boxes .box {
+            float: left;
+            text-align: center;
+            width: 30%;
+            padding: 10px;
+        }
+        #boxes .box img {
+            width: 90px;
+        }
+        .button_1 {
+            display: inline-block;
+            color: #ffffff;
+            background: #e8491d;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        #contact form {
+            margin-top: 20px;
+        }
+        #contact form input, #contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        footer {
+            background: #35424a;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Tên Sản Phẩm</h1>
-        <p>Đây là một đoạn mô tả ngắn về sản phẩm của bạn. Hãy nêu bật những điểm độc đáo và giá trị mà sản phẩm mang lại cho khách hàng.</p>
-        
-        <h2>Tính Năng Chính</h2>
-        <ul class="features">
-            <li>Tính năng 1</li>
-            <li>Tính năng 2</li>
-            <li>Tính năng 3</li>
-            <li>Tính năng 4</li>
-        </ul>
-        
-        <h2>Tại Sao Chọn Chúng Tôi?</h2>
-        <p>Giải thích ngắn gọn về lý do khách hàng nên chọn sản phẩm của bạn. Đề cập đến chất lượng, giá trị, hoặc bất kỳ ưu điểm nào khác.</p>
-        
-        <a href="#" class="cta-button">Mua Ngay</a>
-    </div>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Tech</span>Solutions</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="#showcase">Trang Chủ</a></li>
+                    <li><a href="#boxes">Dịch Vụ</a></li>
+                    <li><a href="#contact">Liên Hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Giải Pháp Công Nghệ Thông Tin Hàng Đầu</h1>
+            <p>Chúng tôi cung cấp các sản phẩm và dịch vụ công nghệ thông tin chất lượng cao, đáp ứng mọi nhu cầu của doanh nghiệp bạn.</p>
+            <a href="#contact" class="button_1">Tư Vấn Ngay</a>
+        </div>
+    </section>
+
+    <section id="boxes">
+        <div class="container">
+            <div class="box">
+                <img src="https://img.icons8.com/color/96/000000/computer.png" alt="Sản phẩm CNTT">
+                <h3>Sản Phẩm CNTT</h3>
+                <p>Cung cấp các sản phẩm phần cứng và phần mềm chất lượng cao, phù hợp với nhu cầu của mọi doanh nghiệp.</p>
+            </div>
+            <div class="box">
+                <img src="https://img.icons8.com/color/96/000000/maintenance.png" alt="Dịch vụ CNTT">
+                <h3>Dịch Vụ CNTT</h3>
+                <p>Dịch vụ hỗ trợ kỹ thuật, bảo trì hệ thống, và tư vấn giải pháp công nghệ toàn diện.</p>
+            </div>
+            <div class="box">
+                <img src="https://img.icons8.com/color/96/000000/cloud-sync.png" alt="Giải pháp đám mây">
+                <h3>Giải Pháp Đám Mây</h3>
+                <p>Cung cấp giải pháp đám mây tiên tiến, giúp doanh nghiệp tối ưu hóa hiệu suất và tiết kiệm chi phí.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Liên Hệ Với Chúng Tôi</h2>
+            <form>
+                <input type="text" name="name" placeholder="Họ và Tên" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="phone" placeholder="Số Điện Thoại">
+                <textarea name="message" placeholder="Nội dung tin nhắn" required></textarea>
+                <button type="submit" class="button_1">Gửi</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>TechSolutions &copy; 2024</p>
+    </footer>
 </body>
 </html>
